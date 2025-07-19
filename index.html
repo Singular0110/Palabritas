@@ -49,8 +49,8 @@
     const hydra = new Hydra({ detectAudio: false });
 
     const palabras = {
-      Silencio: () => osc(2, 0.5, 2).colorama(0.1),
-      Fricción: () => noise(2, 0.5, 2).colorama(-0.9),
+      silencio: () => osc(2, 0.5, 2).colorama(0.1),
+      fricción: () => noise(2, 0.5, 2).colorama(-0.9),
       Movimiento : () => noise(6, 0.5, 2).colorama(0.2).modulateScale(o0, 0.8),
       delirio: () => osc(10, 0.5, 2).colorama(-0.9).modulate(o0, 0.5),
       Tiempo: () => voronoi(2, 0.5, 2).colorama(-0.9).modulate(osc(3, 0.5, 1), 0.5),
